@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --num-elements: 12;
+        --circle-radius: 40rem;
+      }
+      .circle-container {
+        position: relative;
+        width: var(--circle-radius);
+        height: var(--circle-radius);
+        border-radius: 50%;
+        padding: 0;
+        list-style: none;
+        margin: 5rem auto 0;
+        border: solid 5px tomato;
+      }
+      .circle-container img {
+        display: block;
+        max-width: 100%;
+        border-radius: 50%;
+        filter: grayscale(100%);
+        border: solid 5px tomato;
+        transition: 0.15s;
+      }
+      .circle-container img:hover {
+        filter: grayscale(0);
+      }
+      .circle-container > * {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -3rem;
+        width: 6rem;
+        height: 6rem;
+        transform: rotate(calc(360 / var(--num-elements) * var(--deg)))
+          translate(calc(var(--circle-radius) / 2))
+          /*
+          rotate(calc(360 / var(--num-elements) * calc(var(--deg) * -1)))*/;
+      }
+      .circle-container > *:nth-of-type(1) {
+        --deg: 1deg;
+      }
+      .circle-container > *:nth-of-type(2) {
+        --deg: 2deg;
+      }
+      .circle-container > *:nth-of-type(3) {
+        --deg: 3deg;
+      }
+      .circle-container > *:nth-of-type(4) {
+        --deg: 4deg;
+      }
+      .circle-container > *:nth-of-type(5) {
+        --deg: 5deg;
+      }
+      .circle-container > *:nth-of-type(6) {
+        --deg: 6deg;
+      }
+      .circle-container > *:nth-of-type(7) {
+        --deg: 7deg;
+      }
+      .circle-container > *:nth-of-type(8) {
+        --deg: 8deg;
+      }
+      .circle-container > *:nth-of-type(9) {
+        --deg: 9deg;
+      }
+      .circle-container > *:nth-of-type(10) {
+        --deg: 10deg;
+      }
+      .circle-container > *:nth-of-type(11) {
+        --deg: 11deg;
+      }
+      .circle-container > *:nth-of-type(12) {
+        --deg: 12deg;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="circle-container">
+      <li>
+        <img src="https://source.unsplash.com/random/300x300" alt="" />
+      </li>
+      <li>
+        <img src="https://source.unsplash.com/random/300x300" alt="" />
+      </li>
+      <li>
+        <img src="https://source.unsplash.com/random/300x300" alt="" />
+      </li>
+      <li>
+        <img src="https://source.unsplash.com/random/300x300" alt="" />
+      </li>
+      <li>
+        <img src="https://source.unsplash.com/random/300x300" alt="" />
+      </li>
+      <li>
+        <img src="https://source.unsplash.com/random/300x300" alt="" />
+      </li>
+      <li>
+        <img src="https://source.unsplash.com/random/300x300" alt="" />
+      </li>
+      <li>
+        <img src="https://source.unsplash.com/random/300x300" alt="" />
+      </li>
+      <li>
+        <img src="https://source.unsplash.com/random/300x300" alt="" />
+      </li>
+      <li>
+        <img src="https://source.unsplash.com/random/300x300" alt="" />
+      </li>
+      <li>
+        <img src="https://source.unsplash.com/random/300x300" alt="" />
+      </li>
+      <li>
+        <img src="https://source.unsplash.com/random/300x300" alt="" />
+      </li>
+    </ul>
+  </body>
+</html>
