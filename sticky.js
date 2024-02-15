@@ -28,8 +28,7 @@ const els = document.querySelectorAll("h2");
 els.forEach((el) => {
   const observer = new IntersectionObserver(
     ([e]) => {
-      if (e.intersectionRatio < 1 && e.intersectionRatio > 0) {
-        console.log(e.intersectionRatio, el.textContent, e.isIntersecting);
+      if (e.intersectionRatio < 1 && e.boundingClientRect.top < 0) {
         //active
         e.target.classList.add("is-pinned");
         document
