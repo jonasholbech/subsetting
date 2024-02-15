@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+      }
+      .menu ol {
+        position:fixed;
+      }
+      h2 {
+        position: sticky;
+        top: -1px;
+      }
+      .is-pinned {
+        font-weight: bold;
+        color: hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu"><ol></ol></div>
+    <div class="groups">
+        
+      </div>
+    </div>
+
+<template>
+    <div class="group">
+        <h2>January</h2>
+        <div class="list">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
+            ut placeat, nam corporis molestias iusto blanditiis sequi ipsa unde,
+            temporibus deserunt vero ratione quod provident libero nemo quis
+            amet aliquid.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
+            ut placeat, nam corporis molestias iusto blanditiis sequi ipsa unde,
+            temporibus deserunt vero ratione quod provident libero nemo quis
+            amet aliquid.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
+            ut placeat, nam corporis molestias iusto blanditiis sequi ipsa unde,
+            temporibus deserunt vero ratione quod provident libero nemo quis
+            amet aliquid.
+          </p>
+        </div>
+    </template>
+    <script src="sticky.js"></script>
+  </body>
+</html>
