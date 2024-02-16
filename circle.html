@@ -8,6 +8,7 @@
       :root {
         --num-elements: 12;
         --circle-radius: 40rem;
+        font-size: 16px;
       }
       .circle-container {
         position: relative;
@@ -22,10 +23,11 @@
       .circle-container img {
         display: block;
         max-width: 100%;
-        border-radius: 50%;
+        /* border-radius: 50%; */
         filter: grayscale(100%);
         border: solid 5px tomato;
         transition: 0.15s;
+        clip-path: path("M 8 96 L 0,36 A 2.5,2.5 0,0,1 72,36 L 66 96 z");
       }
       .circle-container img:hover {
         filter: grayscale(0);
@@ -40,8 +42,10 @@
         height: 6rem;
         transform: rotate(calc(360 / var(--num-elements) * var(--deg)))
           translate(calc(var(--circle-radius) / 2))
-          /*
-          rotate(calc(360 / var(--num-elements) * calc(var(--deg) * -1)))*/;
+          rotate(calc(360 / var(--num-elements) * calc(var(--deg) * -1)));
+      }
+      .circle-container img {
+        transform: rotate(calc(90deg + (30 * var(--deg))));
       }
       .circle-container > *:nth-of-type(1) {
         --deg: 1deg;
